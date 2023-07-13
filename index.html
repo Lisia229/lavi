@@ -20,6 +20,8 @@
 	<meta content="width=device-width" name="viewport" />
 	<link rel="icon" href="./image/logo.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+	<!-- -magnific -->
+	<link rel="stylesheet" href="./css/magnific-popup.css">
 	<!-- -swiper -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<!-- -aos -->
@@ -65,7 +67,12 @@
 			background-color: #122e53;
 			font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif;
 			overflow-x: hidden;
-			position: relative;
+			height: 100%;
+			width: 100%;
+		}
+
+		html {
+			overflow-x: hidden;
 		}
 
 		a {
@@ -79,6 +86,16 @@
 		body,
 		p {
 			margin: 0;
+		}
+
+		#particles-js {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 1000vh;
+			margin: 0;
+			padding: 0;
 		}
 
 		.bee-desktop_hide {
@@ -1203,20 +1220,210 @@
 			.swiper {
 				display: none;
 			}
-		}
 
-		#particles-js {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
+
+			#particles-js {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 1200vh;
+				margin: 0;
+				padding: 0;
+			}
 		}
 
 		nav {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+
+		#section05 {
+			padding: 1rem 0;
+		}
+
+		#section05 .container {
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+
+		#section05 h1 {
+			font-size: 2rem;
+			text-align: center;
+			margin-bottom: 2rem;
+			padding: 1rem 0;
+			color: #f2ba00;
+		}
+
+		#section05 .card {
+			border: none;
+			border-radius: 0;
+			padding: 1rem;
+		}
+
+		#section05 .card .card-body {
+			padding: 0.5rem 1rem 0;
+		}
+
+		#section05 .card .card-body h5 {
+			color: #333;
+			text-align: center;
+			font-size: 1rem;
+			margin: 0;
+		}
+
+		#section05 .card .card-title {
+			margin-bottom: 0;
+		}
+
+		@media (min-width: 992px) {
+			#section05 {
+				padding: 5rem 0;
+			}
+		}
+
+
+		.d-flex {
+			display: flex !important;
+		}
+
+		.justify-content-center {
+			justify-content: center !important;
+		}
+
+		.align-items-center {
+			align-items: center !important;
+		}
+
+		.container,
+		.container-fluid,
+		.container-xxl,
+		.container-xl,
+		.container-lg,
+		.container-md,
+		.container-sm {
+			--bs-gutter-x: 1.5rem;
+			--bs-gutter-y: 0;
+			width: 100%;
+			padding-right: calc(var(--bs-gutter-x) * 0.5);
+			padding-left: calc(var(--bs-gutter-x) * 0.5);
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		@media (min-width: 576px) {
+
+			.container-sm,
+			.container {
+				max-width: 540px;
+			}
+		}
+
+		@media (min-width: 768px) {
+
+			.container-md,
+			.container-sm,
+			.container {
+				max-width: 720px;
+			}
+		}
+
+		@media (min-width: 992px) {
+
+			.container-lg,
+			.container-md,
+			.container-sm,
+			.container {
+				max-width: 960px;
+			}
+		}
+
+		@media (min-width: 1200px) {
+
+			.container-xl,
+			.container-lg,
+			.container-md,
+			.container-sm,
+			.container {
+				max-width: 1140px;
+			}
+		}
+
+		@media (min-width: 1400px) {
+
+			.container-xxl,
+			.container-xl,
+			.container-lg,
+			.container-md,
+			.container-sm,
+			.container {
+				max-width: 1320px;
+			}
+		}
+
+		.swiper2 {
+			--swiper-theme-color: white;
+			height: 470px;
+		}
+
+		.swiper2 .swiper-pagination-bullet {
+			background: white;
+			opacity: 0.5;
+		}
+
+		.swiper2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+			opacity: 1;
+		}
+
+		.swiper2 .swiper-button-prev,
+		.swiper2 .swiper-button-next {
+			margin-top: -40px;
+		}
+
+		@media (min-width: 576px) {
+			.swiper2 {
+				height: 300px;
+			}
+		}
+
+		@media (min-width: 992px) {
+			.swiper2 {
+				height: 360px;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			.swiper2 {
+				height: 400px;
+			}
+		}
+
+		.backtop {
+			width: 100%;
+			height: 75px;
+			position: fixed;
+			bottom: 0;
+			z-index: 1000;
+			display: none;
+			opacity: 0;
+		}
+
+		.backtop_item {
+			width: 100%;
+			height: 100%;
+		}
+
+		.backtop_item a {
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: url(/image/arrow_top.png) no-repeat center/100px;
+		}
+
+		.backtop_item a:hover {
+			transform: scale(1.2);
+			background: url(/image/arrow_top_hover.png) no-repeat center/100px;
 		}
 	</style>
 </head>
@@ -1243,7 +1450,7 @@
 								style="width: 55%;" /></a></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-icons" >
+					<div class="bee-block bee-block-1 bee-icons">
 						<div class="bee-icon bee-icon-first">
 							<div class="bee-content">
 								<div class="bee-icon-image">
@@ -1276,7 +1483,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-3 bee-mobile_hide">
+		<div id="navbar" class="bee-row bee-row-3 bee-mobile_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w3">
 					<div class="bee-block bee-block-1 bee-image" id="top"><a href="#top" target="_self"><img alt="logo"
@@ -1352,7 +1559,7 @@
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<img src="./image/banner1.png" alt="">
+					<img src="./image/banner_word.png" alt="">
 				</div>
 				<div class="swiper-slide">
 					<img src="./image/banner-2.png" alt="">
@@ -1389,27 +1596,24 @@
 						<div class="spacer" style="height:100px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-image bee-desktop_hide" id="menu-phone"><img alt=""
-							class="bee-center bee-fixedwidth bee-fullwidthOnMobile"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/editor_images/ee7b474d-56f4-4429-9100-2e0aa7d70390.png"
+							class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="./image/menu_word_S.png"
 							style="max-width:1390px;" /></div>
 					<div class="bee-block bee-block-3 bee-image bee-mobile_hide" id="menu"><img alt=""
-							class="bee-center bee-fixedwidth bee-fullwidthOnMobile"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/%E5%A4%9A%E5%85%83%E7%94%A2%E5%93%81%E5%9B%9B%E5%AD%A3%E7%86%B1%E8%B3%A3_1.png"
+							class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="./image/menu_word.png"
 							style="max-width:1390px;" /></div>
 				</div>
 			</div>
 		</div>
+		<!-- -coffee -->
 		<div class="bee-row bee-row-9">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
 					<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/%E6%BF%83%E7%B8%AE%E5%92%96%E5%95%A1_2.png"
-							style="max-width:670px;" /></div>
+							src="./image/coffee.png" style="max-width:670px;" /></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
 					<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/%E6%89%8B%E6%B2%96%E5%92%96%E5%95%A1_1.png"
-							style="max-width:670px;" /></div>
+							src="./image/pourcoffee.png" style="max-width:670px;" /></div>
 				</div>
 			</div>
 		</div>
@@ -1417,32 +1621,97 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
 					<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/%E7%B6%B2%E9%A0%81%E7%B4%A0%E6%9D%90_%E7%94%9C%E5%93%81.png"
-							style="max-width:670px;" /></div>
+							src="./image/dessert.png" style="max-width:670px;" /></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
 					<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/%E7%B6%B2%E9%A0%81%E7%B4%A0%E6%9D%90_%E8%BC%95%E9%A3%9F.png"
-							style="max-width:670px;" /></div>
+							src="./image/lightmeal.png" style="max-width:670px;" /></div>
 				</div>
 			</div>
 		</div>
+		<!-- -light box -->
+		<section id="section05" class="d-flex justify-content-center align-items-center" data-aos="fade-up"
+			data-aos-duration="1500">
+			<div class="container">
+				<h1>menu</h1>
+				<!-- -Slider main container -->
+				<div class="swiper2">
+					<!-- -Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- -Slides -->
+						<div class="swiper2-slide">
+							<div class="card">
+								<a class="image-popup-no-margins" href="./image/menu/coffee.jpg" title="義式咖啡">
+									<img src="./image/menu/coffee.jpg" title="義式咖啡" class="card-img-top">
+								</a>
+								<div class="card-body">
+									<div class="card-title">
+										<h5>義式咖啡</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="card">
+								<a class="image-popup-no-margins" href="./image/menu/pourover.jpg" title="單品手沖">
+									<img src="./image/menu/pourover.jpg" title="單品手沖" class="card-img-top">
+								</a>
+								<div class="card-body">
+									<div class="card-title">
+										<h5>單品手沖</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="card">
+								<a class="image-popup-no-margins" href="./image/menu/dessert.jpg" title="手工甜品">
+									<img src="./image/menu/dessert.jpg" class="card-img-top">
+								</a>
+								<div class="card-body">
+									<div class="card-title">
+										<h5>手工甜品</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="card">
+								<a class="image-popup-no-margins" href="./image/menu/lightmeal.jpg" title="輕食">
+									<img src="./image/menu/lightmeal.jpg" class="card-img-top">
+								</a>
+								<div class="card-body">
+									<div class="card-title">
+										<h5>輕食</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</section>
+
 		<!-- -about -->
 		<div class="bee-row bee-row-11">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div data-aos="fade-up" data-aos-duration="3000" class="bee-block bee-block-1 bee-image bee-mobile_hide"><img
-							alt="" class="bee-center bee-fixedwidth" id="about"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/%E9%97%9C%E6%96%BC%E5%AE%89%E5%B1%85.png"
+							alt="" class="bee-center bee-fixedwidth" id="about" src="./image/about_computer.png"
 							style="max-width:1224px;" /></div>
 					<div data-aos="fade-up" data-aos-duration="3000" class="bee-block bee-block-2 bee-image bee-desktop_hide"><img
-							alt="" class="bee-center bee-fixedwidth" id="about-phone"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/%E6%89%8B%E6%A9%9F%E9%97%9C%E6%96%BC.png"
+							alt="" class="bee-center bee-fixedwidth" id="about-phone" src="./image/about_phone.png"
 							style="max-width:1224px;" /></div>
-					<div class="bee-block bee-block-3 bee-image" data-aos="fade-up" data-aos-duration="3000"><img alt=""
-							class="bee-center bee-autowidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/%E7%95%B6%E8%87%AA%E5%B7%B1%E7%94%9F%E6%B4%BB%E7%9A%84%E5%92%96%E5%95%A1%E5%B8%AB.png"
-							style="max-width:1440px;" /></div>
+					<div class="bee-block bee-mobile_hide bee-block-3 bee-image" data-aos="fade-up" data-aos-duration="3000"><img
+							alt="" class="bee-center bee-autowidth" src="./image/beyourown.png" style="max-width:1440px;" /></div>
+					<div class="bee-block bee-desktop_hide bee-block-3 bee-image" data-aos="fade-up" data-aos-duration="3000"><img
+							alt="" class="bee-center bee-autowidth" src="./image/beyourown_small.png" style="max-width:1440px;" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1457,66 +1726,22 @@
 							class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="./image/corner.JPG"
 							style="max-width:402px;" /></div>
 				</div>
-				<div data-aos="fade-up" data-aos-duration="3000" class="bee-col bee-col-2 bee-col-w6">
+				<div data-aos="fade-right" class="bee-col bee-col-2 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image" id="news"><img alt="" class="bee-center bee-fixedwidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/editor_images/276fd6e3-4ee1-418a-a36b-f3240bc0d947.png"
-							style="max-width:302px;" /></div>
+							src="./image/news_word.png" /></div>
 					<div class="bee-block bee-block-2 bee-text">
 						<div class="bee-text-content"
 							style="font-size: 14px; line-height: 120%; font-family: inherit; color: #f2ba00;">
 							<p style="font-size: 14px; line-height: 16px; text-align: left;"><span
-									style="font-size: 18px; line-height: 21px;">1. 本週五公休</span></p>
-						</div>
-					</div>
-					<div class="bee-block bee-block-3 bee-divider">
-						<div class="center bee-separator" style="border-top:1px solid #F2BA00;width:100%;"></div>
-					</div>
-					<div class="bee-block bee-block-4 bee-text">
-						<div class="bee-text-content"
-							style="font-size: 14px; line-height: 120%; font-family: inherit; color: #f2ba00;">
-							<p style="font-size: 14px; line-height: 16px; text-align: left;"><span
-									style="font-size: 18px; line-height: 21px;">2. 最新甜點xxx布朗尼新上市!</span></p>
-						</div>
-					</div>
-					<div class="bee-block bee-block-5 bee-divider">
-						<div class="center bee-separator" style="border-top:1px solid #F2BA00;width:100%;"></div>
-					</div>
-					<div class="bee-block bee-block-6 bee-text">
-						<div class="bee-text-content"
-							style="font-size: 14px; line-height: 120%; font-family: inherit; color: #f2ba00;">
-							<p style="font-size: 14px; line-height: 16px; text-align: left;"><span
-									style="font-size: 18px; line-height: 21px;">3. 知名手沖師傅現場教學</span></p>
+									style="font-size: 18px; line-height: 21px;">7/28-8/9 lavi試營運開跑啦！
+									<br>
+									lavi cafe's trial operation has begun from July 28 to
+									9th August !
+								</span></p>
 						</div>
 					</div>
 					<div class="bee-block bee-block-7 bee-divider">
 						<div class="center bee-separator" style="border-top:1px solid #F2BA00;width:100%;"></div>
-					</div>
-					<div class="bee-block bee-block-8 bee-text">
-						<div class="bee-text-content"
-							style="font-size: 14px; line-height: 120%; font-family: inherit; color: #f2ba00;">
-							<p style="font-size: 14px; line-height: 16px; text-align: left;"><span
-									style="font-size: 18px; line-height: 21px;">4. 本週五公休</span></p>
-						</div>
-					</div>
-					<div class="bee-block bee-block-9 bee-divider">
-						<div class="center bee-separator" style="border-top:1px solid #F2BA00;width:100%;"></div>
-					</div>
-					<div class="bee-block bee-block-10 bee-text">
-						<div class="bee-text-content"
-							style="font-size: 14px; line-height: 120%; font-family: inherit; color: #f2ba00;">
-							<p style="font-size: 14px; line-height: 16px; text-align: left;"><span
-									style="font-size: 18px; line-height: 21px;">5. 本週五公休</span></p>
-						</div>
-					</div>
-					<div class="bee-block bee-block-11 bee-divider">
-						<div class="center bee-separator" style="border-top:1px solid #F2BA00;width:100%;"></div>
-					</div>
-					<div class="bee-block bee-block-12 bee-text">
-						<div class="bee-text-content"
-							style="font-size: 14px; line-height: 120%; font-family: inherit; color: #f2ba00;">
-							<p style="font-size: 14px; line-height: 16px; text-align: left;"><span
-									style="font-size: 18px; line-height: 21px;">6. 本週五公休</span></p>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -1535,13 +1760,10 @@
 			<div class="bee-row-content">
 				<div data-aos="fade-up" data-aos-duration="3000" class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-image bee-mobile_hide" id="vr"><img alt=""
-							class="bee-center bee-autowidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/VR.png"
-							style="max-width:1390px;" /></div>
+							class="bee-center bee-autowidth" src="./image/vrspace_word.png" style="max-width:1390px;" /></div>
 					<div class="bee-block bee-block-2 bee-image bee-desktop_hide" id="vr-phone"><img alt=""
-							class="bee-center bee-fixedwidth bee-fullwidthOnMobile"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/editor_images/c4c46712-18e9-4019-8a63-a775508792f2.png"
-							style="max-width:348px;" /></div>
+							class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="./image/vrspace_word_S.png"
+							style="max-width:1390px;" /></div>
 				</div>
 			</div>
 		</div>
@@ -1554,13 +1776,10 @@
 						<div class="spacer" style="height:100px;"></div>
 					</div>
 					<div data-aos="fade-up" data-aos-duration="2000" class="bee-block bee-block-3 bee-image bee-mobile_hide"
-						id="contact"><img alt="" class="bee-center bee-autowidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91.png"
+						id="contact"><img alt="" class="bee-center bee-autowidth" src="./image/conatct_word.png"
 							style="max-width:1440px;" /></div>
 					<div class="bee-block bee-block-4 bee-image bee-desktop_hide" id="contact-phone"><img alt=""
-							class="bee-center bee-autowidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/editor_images/bfa3e34a-5366-4d71-ac0b-229ead9944a2.png"
-							style="max-width:440px;" /></div>
+							class="bee-center bee-autowidth" src="./image/conatct_word_S.png" style="max-width:1440px;" /></div>
 				</div>
 			</div>
 		</div>
@@ -1569,8 +1788,7 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-right bee-fixedwidth"
-							src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/contact_1.png"
-							style="max-width:536px;" /></div>
+							src="./image/contact_info.png" style="max-width:536px;" /></div>
 					<div class="bee-block bee-block-2 bee-icons">
 						<div class="bee-icon bee-icon-first">
 							<div class="bee-content">
@@ -1694,6 +1912,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="footer">
 		<!-- -footer -->
 		<div class="bee-row bee-row-20 bee-mobile_hide">
 			<div class="bee-row-content">
@@ -1780,15 +1999,27 @@
 			</div>
 		</div>
 	</div>
+	</div>
 
-	<!-- swiper -->
-	<!-- Swiper JS -->
+	<div class="backtop">
+		<div class="backtop_item">
+			<a href="#"></a>
+		</div>
+	</div>
+	<!-- -jQuery -->
+	<script src="./js/jquery-3.6.3.js"></script>
+	<!-- -magnific -->
+	<script src="./js/jquery.magnific-popup.min.js"></script>
+	<!-- -Swiper JS -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<!-- -aos -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="./js/particles.min.js"></script>
 	<script src="./js/particles.js"></script>
-
+	<!-- -gsap 主程式-->
+	<script src="./Gsap/gsap.js"></script>
+	<script src="./Gsap/ScrollToPlugin.js"></script>
+	<script src="./Gsap/ScrollTrigger.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
 		AOS.init();
@@ -1808,6 +2039,87 @@
 				prevEl: ".swiper-button-prev",
 			},
 		});
+
+		// magnific
+		$(document).ready(function () {
+			$('.image-popup-no-margins').magnificPopup({
+				type: 'image',
+				closeOnContentClick: true,
+				closeBtnInside: false,
+				fixedContentPos: true,
+				mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+				image: {
+					verticalFit: true
+				},
+				zoom: {
+					enabled: true,
+					duration: 300 // don't foget to change the duration also in CSS
+				}
+			})
+		})
+
+		// -swiper
+		const myswiper = new Swiper('.swiper2', {
+			direction: 'horizontal',
+			loop: true,
+			speed: 1000,
+			spaceBetween: 15,
+			centeredSlides: true,
+			autoplay: {
+				delay: 5000
+			},
+			effect: 'coverflow',
+			slidesPerView: 'auto',
+			coverflowEffect: {
+				rotate: 50,
+				stretch: 0,
+				depth: 100,
+				modifier: 1,
+				slideShadows: true
+			},
+
+			breakpoints: {
+				576: {
+					slidesPerView: 2
+				},
+				768: {
+					slidesPerView: 3
+				},
+				920: {
+					slidesPerView: 3
+				},
+				1200: {
+					slidesPerView: 4
+				}
+			},
+
+			pagination: {
+				el: '.swiper-pagination'
+			},
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		})
+
+		// -gsap 註冊plugins
+		gsap.registerPlugin(ScrollToPlugin, ScrollTrigger)
+
+		// -ScrollTrigger 滾動軸
+		// -backtop 回頂端顯示隱藏
+		gsap.to('.backtop', {
+			scrollTrigger: {
+				trigger: '#footer',
+				start: 'top bottom',
+				end: '100% bottom',
+				toggleActions: 'play none none reverse'
+				// markers: true
+			},
+			display: 'block',
+			opacity: 1,
+			duration: 1
+		})
 	</script>
 </body>
 
