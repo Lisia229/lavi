@@ -5,10 +5,7 @@
 	<title>lavi#安居</title>
 	<meta content="summary_large_image" name="twitter:card" />
 	<meta content="website" property="og:type" />
-	<meta content="以法語的ce la vie -這就是生活
-為出發點，運用簡約線條勾勒出
-自在生活的妳/你，踏著從容不迫
-的步伐佐以咖啡，開啟美好的一天" property="og:description" />
+	<meta content="以法語的c'est la vie -這就是生活為出發點，運用簡約線條勾勒出自在生活的妳/你，踏著從容不迫的步伐佐以咖啡，開啟美好的一天" property="og:description" />
 	<meta content="https://ezz4hovq88.preview-postedstuff.com/V2-7j3f-T5ZD-wKey-KEgi/lavi/" property="og:url" />
 	<meta content="./image/banner-1.png" property="og:image" />
 	<meta content="lavi#安居" property="og:title" />
@@ -72,6 +69,7 @@
 		}
 
 		html {
+			width: vw;
 			overflow-x: hidden;
 		}
 
@@ -93,9 +91,36 @@
 			top: 0;
 			left: 0;
 			width: 100vw;
-			height: 1000vh;
+			height: 900vh;
 			margin: 0;
 			padding: 0;
+		}
+
+		.backtop {
+			width: 100%;
+			height: 75px;
+			position: fixed;
+			bottom: 0;
+			z-index: 1000;
+			display: none;
+			opacity: 0;
+		}
+
+		.backtop_item {
+			width: 100%;
+			height: 100%;
+		}
+
+		.backtop_item a {
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: url(./image/arrow_top.png) no-repeat center/100px;
+		}
+
+		.backtop_item a:hover {
+			transform: scale(1.2);
+			background: url(./image/arrow_top_hover.png) no-repeat center/100px;
 		}
 
 		.bee-desktop_hide {
@@ -434,7 +459,7 @@
 		.bee-row-7 .bee-row-content {
 			color: #000;
 			background-color: #122e53;
-			background-image: url(https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/banner-1_1.png);
+			background-image: url(./image/phone/banner-phone.png);
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
@@ -1398,33 +1423,6 @@
 				height: 400px;
 			}
 		}
-
-		.backtop {
-			width: 100%;
-			height: 75px;
-			position: fixed;
-			bottom: 0;
-			z-index: 1000;
-			display: none;
-			opacity: 0;
-		}
-
-		.backtop_item {
-			width: 100%;
-			height: 100%;
-		}
-
-		.backtop_item a {
-			width: 100%;
-			height: 100%;
-			display: block;
-			background: url(/image/arrow_top.png) no-repeat center/100px;
-		}
-
-		.backtop_item a:hover {
-			transform: scale(1.2);
-			background: url(/image/arrow_top_hover.png) no-repeat center/100px;
-		}
 	</style>
 </head>
 
@@ -1913,92 +1911,93 @@
 			</div>
 		</div>
 		<div id="footer">
-		<!-- -footer -->
-		<div class="bee-row bee-row-20 bee-mobile_hide">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a href="#top" target="_blank"><img alt="" class="bee-fixedwidth"
-								src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/editor_images/932eeec4-6d64-43e9-9123-87eee9bc6cc8.png"
-								style="max-width:157px;" /></a></div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
+			<!-- -footer -->
+			<div class="bee-row bee-row-20 bee-mobile_hide">
+				<div class="bee-row-content">
+					<div class="bee-col bee-col-1 bee-col-w4">
+						<div class="bee-block bee-block-1 bee-image"><a href="#top" target="_blank"><img alt=""
+									class="bee-fixedwidth"
+									src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/editor_images/932eeec4-6d64-43e9-9123-87eee9bc6cc8.png"
+									style="max-width:157px;" /></a></div>
 					</div>
-				</div>
-				<div class="bee-col bee-col-3 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-text">
-						<div class="bee-text-content"
-							style="line-height: 120%; font-size: 12px; font-family: inherit; color: #f2ba00;">
-							<p style="font-size: 16px; line-height: 19px; text-align: right;"><strong>Nice to meet you</strong></p>
+					<div class="bee-col bee-col-2 bee-col-w4">
+						<div class="bee-block bee-block-1 bee-spacer">
+							<div class="spacer" style="height:60px;"></div>
 						</div>
 					</div>
-					<div class="bee-block bee-block-2 bee-icons">
-						<div class="bee-icon bee-icon-first">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a
-										href="https://business.facebook.com/latest/home?asset_id=108425128938384&amp;nav_ref=page_composer_interruption"
-										target="_self"><img height="32px"
+					<div class="bee-col bee-col-3 bee-col-w4">
+						<div class="bee-block bee-block-1 bee-text">
+							<div class="bee-text-content"
+								style="line-height: 120%; font-size: 12px; font-family: inherit; color: #f2ba00;">
+								<p style="font-size: 16px; line-height: 19px; text-align: right;"><strong>Nice to meet you</strong></p>
+							</div>
+						</div>
+						<div class="bee-block bee-block-2 bee-icons">
+							<div class="bee-icon bee-icon-first">
+								<div class="bee-content">
+									<div class="bee-icon-image"><a
+											href="https://business.facebook.com/latest/home?asset_id=108425128938384&amp;nav_ref=page_composer_interruption"
+											target="_self"><img height="32px"
+												src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/icons8-facebook-50.png"
+												width="auto" /></a></div>
+								</div>
+							</div>
+							<div class="bee-icon">
+								<div class="bee-content">
+									<div class="bee-icon-image"><a href="https://lin.ee/GoC22Ig" target="_self"><img height="32px"
+												src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/icons8-line-50.png"
+												width="auto" /></a></div>
+								</div>
+							</div>
+							<div class="bee-icon bee-icon-last">
+								<div class="bee-content">
+									<div class="bee-icon-image"><a href="https://instagram.com/lavicafefujin?igshid=YzcxN2Q2NzY0OA=="
+											target="_self"><img height="32px"
+												src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/icons8-instagram-50.png"
+												width="auto" /></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bee-row bee-row-21 bee-desktop_hide">
+				<div class="bee-row-content no_stack">
+					<div class="bee-col bee-col-1 bee-col-w12">
+						<div class="bee-block bee-block-1 bee-text">
+							<div class="bee-text-content"
+								style="line-height: 120%; font-size: 12px; font-family: inherit; color: #f2ba00;">
+								<p style="font-size: 16px; line-height: 19px; text-align: center;"><span
+										style="font-size: 12px; line-height: 14px;"><strong>Nice to meet you</strong></span></p>
+							</div>
+						</div>
+						<div class="bee-block bee-block-2 bee-icons">
+							<div class="bee-icon bee-icon-first">
+								<div class="bee-content">
+									<div class="bee-icon-image"><img height="32px"
 											src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/icons8-facebook-50.png"
-											width="auto" /></a></div>
+											width="auto" /></div>
+								</div>
 							</div>
-						</div>
-						<div class="bee-icon">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a href="https://lin.ee/GoC22Ig" target="_self"><img height="32px"
+							<div class="bee-icon">
+								<div class="bee-content">
+									<div class="bee-icon-image"><img height="32px"
 											src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/icons8-line-50.png"
-											width="auto" /></a></div>
+											width="auto" /></div>
+								</div>
 							</div>
-						</div>
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a href="https://instagram.com/lavicafefujin?igshid=YzcxN2Q2NzY0OA=="
-										target="_self"><img height="32px"
+							<div class="bee-icon bee-icon-last">
+								<div class="bee-content">
+									<div class="bee-icon-image"><img height="32px"
 											src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/icons8-instagram-50.png"
-											width="auto" /></a></div>
+											width="auto" /></div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-21 bee-desktop_hide">
-			<div class="bee-row-content no_stack">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-text">
-						<div class="bee-text-content"
-							style="line-height: 120%; font-size: 12px; font-family: inherit; color: #f2ba00;">
-							<p style="font-size: 16px; line-height: 19px; text-align: center;"><span
-									style="font-size: 12px; line-height: 14px;"><strong>Nice to meet you</strong></span></p>
-						</div>
-					</div>
-					<div class="bee-block bee-block-2 bee-icons">
-						<div class="bee-icon bee-icon-first">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img height="32px"
-										src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/icons8-facebook-50.png"
-										width="auto" /></div>
-							</div>
-						</div>
-						<div class="bee-icon">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img height="32px"
-										src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/icons8-line-50.png"
-										width="auto" /></div>
-							</div>
-						</div>
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img height="32px"
-										src="https://60dfa3a4f9.imgdist.com/public/users/Integrators/BeeProAgency/964514_949075/icons8-instagram-50.png"
-										width="auto" /></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	</div>
 
 	<div class="backtop">
